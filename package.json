@@ -1,20 +1,21 @@
 {
-    "name": "NC-entry-challenge-BE",
-    "description": "Northcoder Entry Application",
-    "version": "0.0.1",
-    "author": {
-      "name": "Josh Gray"
-    },
-    "repository": "codewars/codewars-runner-cli",
-    "bugs": "https://github.com/codewars/codewars-runner-cli/issues",
-    "license": "AGPL-3.0",
-    "scripts": {
-        "test": "mocha --bail test/*.test.js"
-    },
-    "dependencies": {
-      "chai": "^3.5.0",
-      "mocha": "2.5.3"
-    },
-    "devDependencies": {}
-  }
-  
+  "name": "NC-entry-challenge-BE",
+  "description": "Northcoder Entry Application",
+  "version": "0.0.1",
+  "author": {
+    "name": "Josh Gray"
+  },
+  "repository": "codewars/codewars-runner-cli",
+  "bugs": "https://github.com/codewars/codewars-runner-cli/issues",
+  "license": "AGPL-3.0",
+  "scripts": {
+    "test": "mocha --bail test/*.test.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chai": "^3.5.0",
+    "express": "^4.16.3",
+    "mocha": "2.5.3"
+  },
+  "devDependencies": {}
+}
