@@ -2,7 +2,7 @@
 
 console.log('Docker container successfully built');
 
-//const express = require('express');
+const express = require('express');
 
 // Constants
 const PORT = 8080;
