@@ -1,11 +1,18 @@
+'use strict';
+
 console.log('Docker container successfully built');
 
-//const app = require('./server');
-//const config = require('./config'); 
-//const PORT = require('./config').PORT[process.env.NODE_ENV];
+//const express = require('express');
 
-//console.log(`listening on port ${config}`);
+// Constants
+const PORT = 8080;
+const HOST = '0.0.0.0';
 
-// app.listen(PORT, function () {
-//   console.log(`listening on port ${config}`);
-// });
+// App
+const app = express();
+app.get('/', (req, res) => {
+  res.send('Hello world\n');
+});
+
+app.listen(PORT, HOST);
+console.log(`Running on http://${HOST}:${PORT}`);

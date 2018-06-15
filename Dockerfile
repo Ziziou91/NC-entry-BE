@@ -5,7 +5,7 @@ FROM node:7.7.2-alpine
 WORKDIR /usr/app
 
 #Copy the package.json file to /usr/app
-COPY package.json .
+COPY package*.json ./
 
 # Install Node manager so that we can have multiple versions of node
 RUN npm install --quiet
@@ -14,7 +14,7 @@ RUN npm install --quiet
 COPY . .
 
 # Make port 80 available to the world outside this container
-EXPOSE 80
+EXPOSE 8080
 
 #Test code to ensure the build is working
-RUN node index.js 
+CMD [ "npm", "start" ]
