@@ -8,7 +8,7 @@
   "repository": "codewars/codewars-runner-cli",
   "bugs": "https://github.com/codewars/codewars-runner-cli/issues",
   "license": "AGPL-3.0",
-  "main":  "index.js",
+  "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "mocha --bail test/*.test.js"
@@ -17,7 +17,8 @@
     "body-parser": "^1.18.3",
     "chai": "^3.5.0",
     "express": "^4.16.3",
-    "mocha": "2.5.3"
+    "mocha": "2.5.3",
+    "supertest": "^3.1.0"
   },
   "devDependencies": {}
 }
