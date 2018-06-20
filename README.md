@@ -38,6 +38,13 @@ The current test suites and the routes to access them are:
 `localhost:49160/api/question/2`
 
 
+3: Count the characters.
+-> Complete the function `countChars` which takes a string and a character and returns the number of times this character is found within the string.
+
+-> Route
+`localhost:49160/api/question/3`
+
+
 ## Making changes to the app
 
 To add changes made to the app we need to create a new docker container. Ensure you are in the dircectory containing the DockerFile, and using the following terminal command:
